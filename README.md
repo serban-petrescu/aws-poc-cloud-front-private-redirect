@@ -1,14 +1,8 @@
-# Welcome to your CDK TypeScript project!
-
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# AWS POC: CloudFront Private Redirection
 
 ## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
  * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
+
+## Instructions
+Install AWS CDK: `npm i -g aws-cdk` and install the pacakges used in this repository: `npm ci`. Configure the AWS CLI to target `us-east-1` and then perform a deployment using `cdk deploy`. It will output two CD urls, one which uses custom error response configuration and the other uses a lambda-based redirection.
